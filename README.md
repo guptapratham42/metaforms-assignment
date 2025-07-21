@@ -1,6 +1,6 @@
 # Metaforms Assignment
 
-FastAPI service for extracting text from DOCX files.
+FastAPI service for converting unstructured text into structured format strictly following a desired JSON schema.
 
 ## Quick Start
 
