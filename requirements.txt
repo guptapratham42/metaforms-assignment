@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+openai
+jsonschema
+python-dotenv
+mypy
+python-multipart
+pandas
+PyPDF2 
+python-docx 
+ruff

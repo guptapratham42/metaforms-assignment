@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "ee62d0c2-27de-4cd5-9e23-4a2dc507fd71",
+		"name": "JSON extraction",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46947352"
+	},
+	"item": [
+		{
+			"name": "Health Check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Extract Json",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "schema_file",
+							"type": "file",
+							"src": "/Users/prathamgupta/Downloads/convert your resume to this schema.json"
+						},
+						{
+							"key": "text_file",
+							"type": "file",
+							"src": "/Users/prathamgupta/Documents/personal/Pratham_Gupta_Resume.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/extract",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"extract"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Complexity Estimate",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "schema_file",
+							"type": "file",
+							"src": "/Users/prathamgupta/Downloads/github_actions_schema.json"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/complexity-estimate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"complexity-estimate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
