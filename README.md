@@ -14,13 +14,17 @@ FastAPI service for converting unstructured text into structured format strictly
    pip3 install -r requirements.txt
    mypy --install-types
    ```
-
-3. **Run server**
+3. **Add environment variables**
+   ```bash
+   tounch .env
+   ```
+   add OPENAI_API_KEY 
+4. **Run server**
    ```bash
    python -m uvicorn main:app --reload
    ```
 
-4. **Access API docs**
+5. **Access API docs**
    - http://localhost:8000/docs
 
 ## Testing
