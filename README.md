@@ -16,7 +16,7 @@ FastAPI service for converting unstructured text into structured format strictly
    ```
 3. **Add environment variables**
    ```bash
-   tounch .env
+   touch .env
    ```
    add OPENAI_API_KEY 
 4. **Run server**
